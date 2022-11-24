@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
     baseURL: 'https://tw-integracao.azurewebsites.net'
-    // baseURL: 'https://1957-209-14-227-0.sa.ngrok.io/v1/'
+    // baseURL: 'https://aef2-209-14-227-92.sa.ngrok.io'
 });
 
 export default api;
