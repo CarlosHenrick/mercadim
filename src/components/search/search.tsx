@@ -46,7 +46,7 @@ function SearchItems() {
                     return value.toLowerCase().includes(query.toLowerCase())
                 })
                 .map((value, idx) => {
-                    const id = `${value}${idx}`;
+                    const id = `${value}`;
                     return {
                     value: id,
                     label: (
@@ -69,7 +69,7 @@ function SearchItems() {
         <AutoComplete
             key={0}
             dropdownMatchSelectWidth={252}
-            style={{ width: "100%", position: "static" }}
+            style={{ width: "100%" }}
             options={options}
             onChange={onType}
             onSelect={onSearch}

@@ -42,6 +42,7 @@ function RegisterPage() {
                 .then((response) => {
                     console.log("handleRegister ->", response);
                 });
+                
             alert('Cadastro realizado com sucesso, favor confirmar o código de verificação enviado para seu e-mail.');
             history.push('/confirm-register');
             setLoading(false);
@@ -52,7 +53,8 @@ function RegisterPage() {
             if (String(e).trim() === "UsernameExistsException: An account with the given email already exists.")
                 alert('Já existe uma conta com o e-mail fornecido');
             else
-                alert('Opps..., Ocorreu um erro ao tentar logar');
+            alert('Opps..., Ocorreu um erro ao realizar o cadastro, tente novamente mais tarde.');
+
         }
     }
 
